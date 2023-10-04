@@ -30,7 +30,7 @@
 3. `shards install`
 4. `make`
 5. `./ex1`
-6. Edit :  ./src/ex2/app.cr and ./src/ex1/app_actions.cr to create your own app.
+6. Edit :  ./src/ex1/app.cr, state.cr and ./src/ex1/register.cr to create your own app.
 
 
 ## Updates / news :
