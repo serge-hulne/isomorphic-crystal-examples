@@ -1,11 +1,14 @@
 all :
-	crystal build -D preview_mt ./src/gui.cr -o MyApp
+	crystal build -D preview_mt ./src/ex1/app.cr -o ex1
+
+libs:
+	shards install
 
 run :
-	./MyApp
+	./ex1
 
 clean :
-	rm -rf .git MyApp MyApp.dwarf lib shard.lock
+	rm -rf   ex1 ex1.dwarf lib shard.lock
 
 fmt:
 	crystal tool  format .
