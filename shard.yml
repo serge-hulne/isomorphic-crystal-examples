@@ -19,3 +19,5 @@ dependencies:
     github: naqvis/webview
   blueprint:
     github: stephannv/blueprint
+  isomorphic:
+    github: serge-hulne/isomorphic-crystal-lib
