@@ -13,11 +13,5 @@ crystal: 1.6.0
 license: MIT
 
 dependencies:
-  kemal:
-    github: kemalcr/kemal
-  webview:
-    github: naqvis/webview
-  blueprint:
-    github: stephannv/blueprint
-  isomorphic:
+  gui:
     github: serge-hulne/isomorphic-crystal-lib
