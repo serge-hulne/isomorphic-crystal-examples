@@ -27,7 +27,7 @@ class App
     style { LocalCSS }
 
     # HTMX
-    script src: "https://unpkg.com/htmx.org@1.9.6"
+    script src: HTMX
 
     # GUI Definition (uses Blueprint)
     div class: "main" {
