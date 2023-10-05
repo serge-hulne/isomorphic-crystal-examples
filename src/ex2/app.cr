@@ -29,11 +29,11 @@ class App
 
     # GUI Definition (uses Blueprint)
     div class: "main w3-panel" {
-      
+     
       div {
         input type: "text", value: "This editable text should not change when the counter changes", class: "w3-input"
       }
-
+      
       div  {
         button class: "w3-btn w3-circle w3-blue w3-margin w3-large w3-monospace",
           "hx-post": action(increment),
@@ -45,16 +45,15 @@ class App
           "hx-target": "#counter" {
           "-"
         }
-      }
-      
-      div {
-        label id: "counter" { "State : #{@state.count}" }
-      }
+      }      
     }
 
-    div class: "message" { "message: ..." }
-  end
-end
+    div class: "message" {
+      label id: "counter" { "State : #{@state.count}" }
+    }
+
+  end # method Blueprint
+end # Class
 
 def increment(env : HTTP::Server::Context, state : State)
   state.count = state.count + 1
