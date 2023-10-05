@@ -12,6 +12,7 @@ require "gui/macros"
 require "./css"
 require "./register"
 require "./state"
+require "./w3css"
 
 class App
   include Blueprint::HTML
@@ -20,47 +21,38 @@ class App
   end
 
   private def blueprint
-    # Global style (provided by the libary)
-    style { picoCSS }
-
-    # Local widget Style (see css.cr)
+    style { W3CSS }
     style { LocalCSS }
 
     # HTMX
     script src: HTMX
 
     # GUI Definition (uses Blueprint)
-    div class: "main" {
-      br
-      article {
-        input type: "text", value: "This text should not change when the counter changes"
+    div class: "main w3-panel" {
+      
+      div {
+        input type: "text", value: "This editable text should not change when the counter changes", class: "w3-input"
       }
 
-      br
-      article {
-        br
-        form {
-          button "hx-post": action(increment),
-            "hx-target": "#counter" {
-            "Increment counter"
-          }
+      div  {
+        button class: "w3-btn w3-circle w3-blue w3-margin w3-large w3-monospace",
+          "hx-post": action(increment),
+          "hx-target": "#counter" {
+          "+"
         }
-
-        br
-        form {
-          button "hx-post": action(decrement),
-            "hx-target": "#counter" {
-            "Decrement counter"
-          }
+        button class: "w3-btn w3-circle w3-green w3-margin w3-large w3-monospace",
+          "hx-post": action(decrement),
+          "hx-target": "#counter" {
+          "-"
         }
       }
-
-      br
-      article {
+      
+      div {
         label id: "counter" { "State : #{@state.count}" }
       }
     }
-    div class: "message" { "state demo" }
+
+    div class: "message" { "message: ..." }
   end
 end
 
