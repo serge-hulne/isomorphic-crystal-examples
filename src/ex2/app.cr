@@ -1,8 +1,8 @@
 # file app.cr
 
-# ===========================
+# ====================
 # Widgets / layout
-# ===========================
+# =====================
 
 require "blueprint/html"
 
@@ -26,6 +26,10 @@ class App
 
     # HTMX
     script src: HTMX
+    
+    # HTMX debug
+    script src: "https://unpkg.com/htmx.org/dist/ext/debug.js"
+
 
     # GUI Definition (uses Blueprint)
     div class: "main w3-panel" {
@@ -37,12 +41,14 @@ class App
       div  {
         button class: "w3-btn w3-circle w3-blue w3-margin w3-large w3-monospace",
           "hx-post": action(increment),
-          "hx-target": "#counter" {
+          "hx-target": "#counter",
+          "hx-ext": "debug" {
           "+"
         }
         button class: "w3-btn w3-circle w3-green w3-margin w3-large w3-monospace",
           "hx-post": action(decrement),
-          "hx-target": "#counter" {
+          "hx-target": "#counter",
+          "hx-ext": "debug" {
           "-"
         }
       }      
@@ -54,6 +60,10 @@ class App
 
   end # method Blueprint
 end # Class
+
+# ====================
+# Actions 
+# =====================
 
 def increment(env : HTTP::Server::Context, state : State)
   state.count = state.count + 1
