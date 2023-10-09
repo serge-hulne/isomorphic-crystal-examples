@@ -21,6 +21,9 @@ class App
   end
 
   private def blueprint
+
+    title {"Isomorphic Crystql : Example 2"}
+
     style { W3CSS }
     style { LocalCSS }
 
