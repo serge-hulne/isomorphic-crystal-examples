@@ -25,7 +25,8 @@
 
 ## Installation
 
-1. `git clone https://github.com/serge-hulne/isomorphic-crystal-examples`
+1. Install the Isomorphic browser first: https://github.com/serge-hulne/isomorphic 
+2. `git clone https://github.com/serge-hulne/isomorphic-crystal-examples`
 2. `cd isomorphic-crystal-examples`
 3. `shards install`
 4. `make`
