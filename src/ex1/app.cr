@@ -65,11 +65,11 @@ class App
 end
 
 def increment(env : HTTP::Server::Context, state : State)
-  state.count = state.count + 1
+  state.count += 1
   "<div> State: #{state.count} </div>"
 end
 
 def decrement(env : HTTP::Server::Context, state : State)
-  state.count = state.count - 1
+  state.count -=1
   "<div> State: #{state.count} </div>"
 end

@@ -22,7 +22,7 @@ class App
 
   private def blueprint
 
-    title {"Isomorphic Crystql : Example 2"}
+    title {"Isomorphic Crystal : Example 2"}
 
     style { W3CSS }
     style { LocalCSS }
@@ -69,11 +69,11 @@ end # Class
 # =====================
 
 def increment(env : HTTP::Server::Context, state : State)
-  state.count = state.count + 1
+  state.count +=1
   "<div> State: #{state.count} </div>"
 end
 
 def decrement(env : HTTP::Server::Context, state : State)
-  state.count = state.count - 1
+  state.count -= 1
   "<div> State: #{state.count} </div>"
 end
