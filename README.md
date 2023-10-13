@@ -25,7 +25,7 @@
 
 ## Installation
 
-1. Install the Isomorphic browser first (once): https://github.com/serge-hulne/isomorphic 
+1. Install the Isomorphic browser first (once): https://github.com/serge-hulne/isomorphic-crystal-browser
 2. `git clone https://github.com/serge-hulne/isomorphic-crystal-examples`
 2. `cd isomorphic-crystal-examples`
 3. `shards install`
