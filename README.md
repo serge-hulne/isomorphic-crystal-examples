@@ -1,5 +1,3 @@
-![Screenshot 2023-10-05 at 07 53 32](https://github.com/serge-hulne/isomorphic-crystal-examples/assets/303502/1f0ebb6c-91cf-4b05-8400-8669a954a200)# Isomorphic Crystal GUI
-
 # GUI lib for Crystal-lang allowing for developing simple desktop apps using Crystal-lang.
 
 - Expressive (JSX-like).
@@ -49,8 +47,7 @@ The aim is to provide a portable GUI library which will allows developers to cod
 GUI lib for Crystal-lang allowing for developing simple desktop apps using Crystal only. Zero dependencies.
 
 ## illustrations 
-
-![Screenshot 2023-10-05 at 07 53 32](https://github.com/serge-hulne/isomorphic-crystal-examples/assets/303502/cad61e7b-e80e-4775-a721-dc25b9384c26)
+![Screenshot 2023-10-05 at 07 53 32](https://github.com/serge-hulne/isomorphic-crystal-examples/assets/303502/96550c56-8e1a-408a-84c1-8506e9c62b92)
 
 
 ## Layouts / Styling / Customisation
