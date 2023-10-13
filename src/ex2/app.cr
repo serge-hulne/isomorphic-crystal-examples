@@ -2,7 +2,7 @@
 
 # ====================
 # Widgets / layout
-# =====================
+# ====================
 
 require "blueprint/html"
 
@@ -66,7 +66,7 @@ end # Class
 
 # ====================
 # Actions 
-# =====================
+# ====================
 
 def increment(env : HTTP::Server::Context, state : State)
   state.count +=1
