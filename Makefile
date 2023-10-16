@@ -13,7 +13,7 @@ run :
 	./ex1
 
 clean :
-	rm -rf   ex1 ex1.dwarf lib shard.lock
+	rm -rf   ex1 ex2 *.dwarf lib shard.lock
 
 fmt:
 	crystal tool  format .

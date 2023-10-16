@@ -2,4 +2,5 @@
 /bin/
 *.dwarf
 ex1 ex1.dwarf
+ex2 ex2.dwarf
 shard.lock
