@@ -34,4 +34,4 @@ spawn do #
 end # spawn
 
 # Run app
-run_app("Example 2 demo: Minimalist counter (using W3CSS)")
+run_app("Example 2 demo: Minimalist counter (using W3CSS)", 800, 600)

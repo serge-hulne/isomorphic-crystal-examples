@@ -34,4 +34,4 @@ spawn do #
 end # spawn
 
 # Run app
-run_app("Example 1 demo")
+run_app("Example 1 demo", 800, 600)
