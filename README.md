@@ -21,6 +21,9 @@
 - libgtk : gtk+-3.0
 (See your package manager for instructions ("apt-get" or "yum" or "pacman", or other, depending upon your linux distribution))
 
+# Dependencies on MAc
+brew install gtk+3
+
 ## Installation
 
 1. Install the Isomorphic browser first (once): https://github.com/serge-hulne/isomorphic-crystal-browser
